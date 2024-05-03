@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.9rem;  
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+.btn {
+    padding: 1rem 1.5rem;
+    background: bisque;
+    border: 1.5px solid burlywood;
+    cursor: pointer;
+}
+
+.pre-title{
+    letter-spacing:  0.1rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pre-title::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: black;
+    left: 0;
+    top: 50%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0.5s ease-in-out;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 650;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.logo a {
+        color:burlywood
+}
+
+nav ul li a {
+    color: burlywood;
+}
+
+/*Home Section*/
+#home {
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-name {
+    font-size: 2rem;
+    font-weight: 650px;
+    margin:  0.3rem 0 1rem;
+    color: burlywood;
+}
+
+.home-right img {
+    width: 450px;
+    border-radius: 1rem;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+    
+}
+
+/*About Section*/
+#About {
+    background-color: antiquewhite;
+    padding: 6rem 0;
+}
+
+.section-title-about{
+    text-align: center;
+    margin: 1rem 0 2rem;
+}
+
+
+/*Skillset Section*/
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.about {
+    color: rgb(0, 0, 0);
+    padding: 2rem 1rem;
+    text-align: center;
+    background: burlywood;
+    border-radius: 3rem;
+}
+
+.about-icon{
+    background-color: azure;
+    opacity: 75%;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+
+}
+
+/* End of About */
+
+/* Skills & Experiences */
+
+#skills {
+    padding: 6rem 0;
+}
+
+.section-title-skills {
+    text-align: center;
+    margin: 1rem 0 2rem;    
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.Experiences {
+    display: flex;
+    gap: 1rem;
+}
+
+.Experiences line {
+    padding: 0 0.7rem;
+}
+
+.Experiences .line div {
+    width: 2px;
+    height: 100%;
+    background: burlywood;
+    position: relative;
+}
+
+.experience-info {
+    margin: 0.3rem 0;
+}
+
+.experience-date {
+    margin-bottom: 3rem;
+}
+
+
+.skill-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skill-right {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+#contact {
+    color:  rgb(214, 150, 66) ;
+    padding: 6rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-family: "poppins", sans-serif;
+    background: bisque;
+    border: 1px solid burlywood;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color: black;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid brown;
+}
+
+.btn-submit {
+    padding: 0.75rem 1rem;
+    font-family: "poppins", sans-serif;
+    background: burlywood;
+    border: 1px solid burlywood;
+    border-radius: 3px;
+    resize: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-submit:hover{
+    background-color: rgb(214, 150, 66) ;
+    color: white;
+}
+
+/* End of Contaact */
+
+/* Footer */
+
+footer {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background: bisque;
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons a:hover {
+    fill: black;
+}
+
+.footer-icons {
+    fill: grey;
+}
